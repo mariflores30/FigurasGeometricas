@@ -10,7 +10,6 @@ import javaapplication21.Figuras;
  */
 public class Circulo extends Figuras{
     private double radio;
-    private double diametro;
     private static final  double PI=Math.PI;
 
     public double getRadio() {
@@ -18,7 +17,7 @@ public class Circulo extends Figuras{
     }
 
     public double getDiametro() {
-        return diametro;
+        return calcularDiametro();
     }
 
     public static double getPI() {
@@ -36,22 +35,19 @@ public class Circulo extends Figuras{
         this.radio = radio;
     }
     
-    public double calcularDiametro(){
-        this.diametro=radio*2;
-        return diametro;
+    protected double calcularDiametro(){
+        return radio *2;
     }
     
     
 @Override 
-    public double calcularPerimetro(){
-        this.Perimetro=2*Circulo.PI*this.radio;
-        return 0;
+    protected double calcularPerimetro(){
+        return 2*Circulo.PI*this.radio;
     }
     
     @Override 
-        public double calcularArea(){
-            this.Area=Math.pow(radio,2)*Circulo.PI;
-            return Area;
+        protected double calcularArea(){
+            return Math.pow(radio,2)*Circulo.PI;
         }
         
     }
