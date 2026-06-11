@@ -35,13 +35,13 @@ public class Circulo extends Figuras{
         this.radio = radio;
     }
     
-    protected double calcularDiametro(){
+    private double calcularDiametro(){
         return radio *2;
     }
     
     
 @Override 
-    protected double calcularPerimetro(){
+   protected double calcularPerimetro(){
         return 2*Circulo.PI*this.radio;
     }
     
