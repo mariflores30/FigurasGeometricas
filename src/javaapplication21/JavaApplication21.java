@@ -26,7 +26,15 @@ public class JavaApplication21 {
         System.out.println(c1.getArea());
         
         
+
+ Circulo c2=new Circulo(3);
+        c2.calcularDiametro();
+        c2.calcularPerimetro();
+        c2.calcularArea();
         
+        System.out.println(c2.getRadio());
+        System.out.println(c2.getDiametro());
+        System.out.println(c2.getPerimetro());
+        System.out.println(c2.getArea());
     }
-    
 }

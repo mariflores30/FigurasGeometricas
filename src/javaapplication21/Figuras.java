@@ -9,18 +9,17 @@ package javaapplication21;
  * @author María J
  */
 public abstract class Figuras {
-    protected double area;
-    protected double perimetro;
-
-    public double getArea() {
-        return area;
-    }
+    
 
     public double getPerimetro() {
-        return perimetro;
+        return calcularPerimetro();
+    }
+
+    public double getArea() {
+        return calcularArea();
     }
     
-    public abstract double calcularPerimetro();
-    public abstract double calcularArea();
+    protected abstract double calcularPerimetro();
+    protected abstract double calcularArea();
             
 }

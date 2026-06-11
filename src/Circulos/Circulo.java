@@ -44,14 +44,14 @@ public class Circulo extends Figuras{
     
 @Override 
     public double calcularPerimetro(){
-        this.perimetro=2*Circulo.PI*this.radio;
+        this.Perimetro=2*Circulo.PI*this.radio;
         return 0;
     }
     
     @Override 
         public double calcularArea(){
-            this.area=Math.pow(radio,2)*Circulo.PI;
-            return area;
+            this.Area=Math.pow(radio,2)*Circulo.PI;
+            return Area;
         }
         
     }
