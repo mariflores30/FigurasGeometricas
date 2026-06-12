@@ -33,28 +33,28 @@ public class Circulo extends Figuras{
         this.radio = radio;
     }
     
-    private double calcularDiametro(){
+    public double calcularDiametro(){
         return radio *2;
     }
     
     
 @Override 
-   protected double calcularPerimetro(){
+   public double calcularPerimetro(){
         return 2*Circulo.PI*this.radio;
     }
     
     @Override 
-        protected double calcularArea(){
+        public double calcularArea(){
             return Math.pow(radio,2)*Circulo.PI;
         }
 
     @Override
     public String toString() {
-        return "Circulo{\nRadio:" + radio +
-                "\ndiametro:" +getDiametro() +
-                "\nCircunferencia:" + getPerimetro ()+
-                        "\narea:"+ getArea() +
-                                "\n}";
+        return "Circulo{\nRadio:" + radio +"\ndiametro:" +getDiametro() +"\nCircunferencia:" + getPerimetro ()+"\narea:"+ getArea() + "\n}";
+    }
+
+    public boolean getRadio() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
         
     }
